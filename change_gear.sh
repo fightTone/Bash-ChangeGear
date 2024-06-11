@@ -3,8 +3,9 @@
 # Description: A script to change the git profile and ssh key
 #===================================================================================================
 # Change/Edit the following variables according to your need
-priv_key="/home/userX/.ssh/id_rsa"
-pub_key="/home/userX/.ssh/id_rsa.pub"
+default_path="/home/userX/.ssh/id_rsa"
+priv_key="$default_path/id_rsa"
+pub_key="$default_path/id_rsa.pub"
 
 gear1_name="JARVIS"
 gear1_art="~/asciiart/power_ranger.txt"
@@ -22,6 +23,7 @@ gear2_user="git_username2"
 gear2_msg1="Gotta catch 'em all !!!"
 gear2_msg2="Console: Hello $gear2_user, You are now in \"Pokémon Master\" mode"
 #==================== END OF EDITABLE PART ========================================================
+
 
 read -p "what's the magic word: " input
 if [[ "$input" == "gogopowerranger" ]]; then
@@ -50,7 +52,7 @@ fi
 
 # Check if any .pub file exists
 if [ -f $pub_key ]; then
-    cat /home/userX/.ssh/id_rsa.pub
+    cat $default_path/id_rsa.pub
     if [[ "$(cat $gear1_path.pub)" == "$(cat $pub_key)" ]]; then
         echo "<<< current_profile: $gear1_name >>>"
     elif [[ "$(cat $gear2_path.pub)" == "$(cat $pub_key)" ]]; then
