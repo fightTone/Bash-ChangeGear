@@ -10,7 +10,7 @@ ssh-key switcher for multiple github accounts
 ![Screenshot](https://github.com/fightTone/Bash-ChangeGear/blob/main/samples/gearx.png)
 ## Work on Profile 1
  - comment your pubkey if you dont want to use it
-![Screenshot](https://github.com/fightTone/Bash-ChangeGear/blob/main/samples/gearx.png)
+![Screenshot](https://github.com/fightTone/Bash-ChangeGear/blob/main/samples/gear01.png)
 ## Work on Profile 1
  - comment your pubkey if you dont want to use it
-![Screenshot](https://github.com/fightTone/Bash-ChangeGear/blob/main/samples/gearx.png)
+![Screenshot](https://github.com/fightTone/Bash-ChangeGear/blob/main/samples/gear2.png)
