@@ -6,7 +6,7 @@
 priv_key="/home/userX/.ssh/id_rsa"
 pub_key="/home/userX/.ssh/id_rsa.pub"
 
-gear1_name = "JARVIS"
+gear1_name="JARVIS"
 gear1_art="~/asciiart/power_ranger.txt"
 gear1_path="/home/userX/my/ssh/private/key/path/id_rsa_comapnyName"
 gear1_email="user@github_email.com"
@@ -14,13 +14,13 @@ gear1_user="git_username"
 gear1_msg1="Let's Go Master!!!"
 gear1_msg2="Console: Hello $gear1_user, You are now in \"Power Ranger\" mode"
 
-gear2_name = "BinBounty"
+gear2_name="BinBounty"
 gear2_art="~/asciiart/pikachu.txt"
 gear2_path="/home/userX/my/ssh/private/key/path/id_rsa_personal"
 gear2_email="user2@samplemail.com"
 gear2_user="git_username2"
 gear2_msg1="Gotta catch 'em all !!!"
-gear2_msg2="Console: Hello $gear1_user, You are now in \"Pokémon Master\" mode"
+gear2_msg2="Console: Hello $gear2_user, You are now in \"Pokémon Master\" mode"
 #==================== END OF EDITABLE PART ========================================================
 
 read -p "what's the magic word: " input
