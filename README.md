@@ -21,13 +21,15 @@ ssh-key switcher for multiple github accounts
 6. rename your current ssh_private and public key to id_rsa_personal,
 7. generate a new key for your other account then rename the private and public to id_rsa_whateverYouWant
    example
+
    ```
    id_rsa => will now be id_rsa_company_X
    id_rsa.pub => will now be id_rsa_company_X.pub
    ```
+
    so it will be easier to edit the .sh file
 
-- modify the script in any way you want
+- modify the script in any way you want (you can add aws key too  changer to in the profiles)
 - finally you can now run ``./change_gear.sh`` in you home folder or if you prefer to add it in .bashrc, its up to you
 
 ## Enter your magic_word
