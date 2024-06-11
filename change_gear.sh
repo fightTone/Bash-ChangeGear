@@ -1,12 +1,14 @@
 priv_key="/home/userX/.ssh/id_rsa"
 pub_key="/home/userX/.ssh/id_rsa.pub"
 
+gear1_name = "JARVIS"
 gear1_path="/home/userX/my/ssh/private/key/path/id_rsa_comapnyName"
 gear1_email="user@github_email.com"
 gear1_user="git_username"
 gear1_msg1="Let's Go Master!!!"
 gear1_msg2="Console: Hello $gear1_user, You are now in \"Power Ranger\" mode"
 
+gear2_name = "BinBounty"
 gear2_path="/home/userX/my/ssh/private/key/path/id_rsa_personal"
 gear2_email="user2@samplemail.com"
 gear2_user="git_username2"
@@ -43,9 +45,9 @@ fi
 if [ -f $pub_key ]; then
     cat /home/userX/.ssh/id_rsa.pub
     if [[ "$(cat $gear1_path.pub)" == "$(cat $pub_key)" ]]; then
-        echo "<<< current_profile: comapnyName >>>"
+        echo "<<< current_profile: $gear1_name >>>"
     elif [[ "$(cat $gear2_path.pub)" == "$(cat $pub_key)" ]]; then
-        echo "<<< current_profile: BinBounty >>>"
+        echo "<<< current_profile: $gear2_name >>>"
     fi | lolcat
 else
     echo "<<< -UNKNOWN- >>>" | lolcat
